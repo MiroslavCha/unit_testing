@@ -12,5 +12,5 @@ TEST(example, average)
 
     float aver = comp.average(sample);
 
-    ASSERT_THAT(aver, 3.0, 1.0e-11);
+    ASSERT_TRUE(aver == 3.0);
 }
