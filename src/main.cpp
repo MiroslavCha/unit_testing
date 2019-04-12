@@ -21,7 +21,7 @@ int main()
 
     float aver = worker.average(array);
 
-    cout << "average is" << aver << endl;
+    cout << "average is " << aver << endl;
 
     return 0;
 }

@@ -8,7 +8,7 @@ class compute
 {
 public:
     compute();
-    std::vector<int> parse(std::string line);
+    std::vector<int> parse(std::string str);
     float average(std::vector<int> array);
 };
 
