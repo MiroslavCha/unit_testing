@@ -22,6 +22,6 @@ TEST(example, parsing)
 
     vector<int> array = comp.parse(sample);
 
-    ASSERT_TRUE(array[0] == 32);
+    ASSERT_TRUE(array[0] == 22);
     ASSERT_TRUE(array[2] == 32);
 }
