@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include "gmock/gmock.h"
 #include "compute.h"
 
 #include <vector>
@@ -12,7 +13,7 @@ TEST(example, average)
 
     float aver = comp.average(sample);
 
-    ASSERT_TRUE(aver == 3.0);
+    EXPECT_EQ(aver, 3.0);
 }
 
 TEST(example, parsing)
@@ -22,6 +23,5 @@ TEST(example, parsing)
 
     vector<int> array = comp.parse(sample);
 
-    ASSERT_TRUE(array[0] == 32);
-    ASSERT_TRUE(array[2] == 32);
+    EXPECT_THAT(array, testing::ElementsAre(31, 32, 32));
 }
